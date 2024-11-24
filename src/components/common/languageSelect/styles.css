@@ -1,0 +1,14 @@
+.language-selector {
+    /* Estilos generales */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 16px;
+  
+    /* Estilos para el estado hover */
+    &:hover {
+      border-color: #999;
+      cursor: pointer;
+    }
+  }

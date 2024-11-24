@@ -1,0 +1,40 @@
+.icon {
+    height: 100px;
+    width: 100px;
+}
+
+.day-card-container {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    padding: 12px;
+    width: 180px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 250px;
+  }
+
+  .temperature-range-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+   
+  }
+
+.more-details-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    color: inherit;
+    border: none;
+    text-transform: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .more-details-button:hover {
+    color: #007BFF;
+  }
+
