@@ -5,12 +5,3 @@
     align-items: center;
   }
   
-  /* Para cuando day.list.length > 6 */
-  .time-list-container.many-items {
-    gap: 25px;
-  }
-  
-  /* Para cuando day.list.length <= 6 */
-  .time-list-container.few-items {
-    gap: 3rem;
-  }

@@ -20,5 +20,5 @@ export const getMostFrequentWeatherId = (forecast: ForecastEntry[]): number => {
     return frequencyMap[Number(currentId)] > frequencyMap[mostFrequentId]
       ? Number(currentId)
       : mostFrequentId;
-  }, Number(Object.keys(frequencyMap)[0])); // Inicializa con el primer `id`
+  }, Number(Object.keys(frequencyMap)[0]));
 };

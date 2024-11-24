@@ -2,20 +2,14 @@ import { Box, Typography } from "@mui/material";
 import { ForecastEntry } from "../../../types";
 import { getIcon } from "../cityCards/controller";
 import './styles.css'
-import { roundToOneDecimal } from "../../../utils";
+import { formatTime, roundToOneDecimal } from "../../../utils";
 
 interface Props {
   data: ForecastEntry;
 }
 const HourlyCards = ({ data }: Props) => {
   const { timestamp, mainData, weather } = data;
-
-  // Convertir timestamp a hora local
-  const formatTime = (timestamp: number) => {
-    const date = new Date(timestamp * 1000);
-    return date.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
-  };
-
+  
   return (
     <Box
       sx={{
@@ -27,19 +21,14 @@ const HourlyCards = ({ data }: Props) => {
         boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
       }}
     >
-      {/* Hora */}
       <Typography variant="subtitle2" color="textSecondary">
         {formatTime(timestamp)}
       </Typography>
-
-      {/* Icono del clima */}
       <img
           className="icon"
           src={getIcon(weather.id as number)}
           alt="icon-weather"
         />
-
-      {/* Temperatura */}
       <Typography variant="h6" fontWeight="bold" mt={1}>
         {roundToOneDecimal(mainData.temperature)}°C
       </Typography>

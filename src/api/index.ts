@@ -72,11 +72,11 @@ export const getDaylyWeatherForCity = async (cityName: string) => {
     );
 
     const newExtendedForecast = {
-      city: data.city.name, // Representa `city.name`
-      country: data.city.country, // Representa `city.country`
-      timezone: data.city.timezone, // Representa `city.timezone`
-      sunrise: data.city.sunrise, // Representa `city.sunrise`
-      sunset: data.city.sunset, // Representa `city.sunset`
+      city: data.city.name, 
+      country: data.city.country, 
+      timezone: data.city.timezone,
+      sunrise: data.city.sunrise,
+      sunset: data.city.sunset, 
       forecast: array,
     };
 
@@ -118,7 +118,7 @@ const mapApiResponseToForecastEntry = (data: any): ForecastEntry => {
     wind: {
       speed: data.wind.speed,
       degree: data.wind.deg,
-      gust: data.wind.gust || 0, // Si no existe gust, establecemos 0 como predeterminado.
+      gust: data.wind.gust || 0, 
     },
     visibility: data.visibility,
     pop: data.pop,

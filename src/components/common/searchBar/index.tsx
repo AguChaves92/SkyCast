@@ -1,14 +1,14 @@
-import { Input, InputAdornment, TextField } from "@mui/material";
+import { TextField } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import { styled } from "@mui/material/styles";
 import { t } from "../../../location/location";
 import { useState } from "react";
 
-// Estilo personalizado para el icono de búsqueda
+
 const ClickableSearchIcon = styled(SearchIcon)({
   cursor: "pointer",
   "&:hover": {
-    color: "#1976d2", // Cambia el color al hacer hover
+    color: "#1976d2",
   },
 });
 

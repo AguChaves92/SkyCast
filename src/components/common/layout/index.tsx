@@ -35,7 +35,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
   return (
     <Box className={className} sx={style}>
-      {isLoading && <Loader />} {/* Añade el Loader aquí */}
+      {isLoading && <Loader />}
       <Box className="navbar">
         <Box>
           <Box

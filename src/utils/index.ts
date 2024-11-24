@@ -5,7 +5,7 @@ export const roundToOneDecimal = (value: number): number => {
 
 export const convertMetersToKilometers = (meters: number): string => {
     const kilometers = meters / 1000;
-    return `${roundToOneDecimal(kilometers)} km`; // Redondea a 1 decimal y agrega la unidad
+    return `${roundToOneDecimal(kilometers)} km`; 
 };
 
 
@@ -15,3 +15,9 @@ export const  getDayAndMonth=(timestamp:number) =>{
   const month = String(date.getMonth() + 1).padStart(2, '0');
   return `${day}/${month}`;
 }
+
+
+export   const formatTime = (timestamp: number) => {
+  const date = new Date(timestamp * 1000);
+  return date.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+};

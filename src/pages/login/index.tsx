@@ -1,6 +1,6 @@
 import React from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
-import "./styles.css"; // Importa el archivo de estilos
+import "./styles.css"; 
 import { useContextProvider } from "../../hooks/useMyContexthooks";
 import { useNavigate } from "react-router-dom";
 

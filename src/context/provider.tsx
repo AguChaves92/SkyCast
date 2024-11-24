@@ -2,8 +2,6 @@ import { City, ExtendedForecast, SnackbarType } from "../types";
 import { MyContext } from "./context";
 import { ReactNode, useEffect, useState } from "react";
 import { getCurrentWeatherForCity, getDaylyWeatherForCity } from "../api";
-
-import { t } from "../location/location";
 import CustomSnackbar from "../components/common/snackBar";
 
 interface IProvider {

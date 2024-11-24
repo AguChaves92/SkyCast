@@ -32,7 +32,6 @@ const ContactFormModal = ({ open, onClose }:Props) => {
 
   const onSubmit = async (data:any) => {
     setIsLoading(true);
-    // Simulamos el envío del formulario
     await new Promise((resolve) => setTimeout(resolve, 2000));
     setIsLoading(false);
     setShowSuccessMessage(true);

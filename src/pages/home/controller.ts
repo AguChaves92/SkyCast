@@ -26,7 +26,6 @@ function getTimestampsWithDayOfTheWeek() {
   for (let i = 0; i <= 5; i++) {
     const date = new Date(today);
     date.setDate(date.getDate() + i);
-    // Ajustar a las 00:00 hs
     date.setHours(0, 0, 0, 0);
 
     const timestamp = date.getTime();

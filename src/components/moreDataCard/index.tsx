@@ -134,13 +134,4 @@ const MoreDataCard = ({ data }: Props) => {
   );
 };
 
-/* barometer 
-celcius
-humidity
-sunset,
-sunrise,
-windsock
-wind-beaufort-.svg
-*/
-
 export default MoreDataCard;

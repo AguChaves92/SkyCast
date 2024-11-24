@@ -8,15 +8,7 @@ export const getWindDirection = (degrees: number): string => {
   if (degrees > 247.5 && degrees <= 292.5) return "W";
   if (degrees > 292.5 && degrees <= 337.5) return "NW";
   if (degrees > 337.5 && degrees <= 360) return "N";
-  return "Invalid"; // Si el valor está fuera de rango
-};
-
-export const getHourFromTimestamp = (timestamp: number): string => {
-  const date = new Date(timestamp * 1000); // Convertimos a milisegundos
-  return date.toLocaleTimeString("en-US", {
-    hour: "2-digit",
-    minute: "2-digit",
-  });
+  return "Invalid"; 
 };
 
 export const getGustIcon = (windSpeed: number) => {

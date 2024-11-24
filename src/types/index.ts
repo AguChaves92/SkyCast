@@ -13,49 +13,49 @@ export interface City {
 }
 
 export interface WeatherData {
-  main: string; // Resumen del clima ("Rain", "Clouds", etc.)
-  description: string; // Descripción más detallada
-  id: number; // Icono del clima
+  main: string; 
+  description: string; 
+  id: number; 
 }
 
 export interface MainData {
-  temperature: number; // Temperatura actual
-  feelsLike: number; // Sensación térmica
-  tempMin: number; // Temperatura mínima
-  tempMax: number; // Temperatura máxima
-  pressure: number; // Presión atmosférica
-  humidity: number; // Humedad
+  temperature: number; 
+  feelsLike: number;
+  tempMin: number; 
+  tempMax: number; 
+  pressure: number; 
+  humidity: number; 
 }
 
 export interface SysData {
-  country: string; // País
-  sunrise: number; // Hora del amanecer (timestamp)
-  sunset: number; // Hora del atardecer (timestamp)
+  country: string;
+  sunrise: number; 
+  sunset: number;
 }
 
 export interface ExtendedForecast {
-  city: string; // Representa `city.name`
-  country: string; // Representa `city.country`
-  timezone: number; // Representa `city.timezone`
-  sunrise: number; // Representa `city.sunrise`
-  sunset: number; // Representa `city.sunset`
-  forecast: ForecastEntry[]; // Array de entradas de pronóstico
+  city: string;
+  country: string; 
+  timezone: number;
+  sunrise: number; 
+  sunset: number;
+  forecast: ForecastEntry[]; 
 }
 
 export interface WindData {
-  speed: number; // `list.wind.speed`
-  degree: number; // `list.wind.deg`
-  gust?: number; // `list.wind.gust`
+  speed: number; 
+  degree: number; 
+  gust?: number; 
 }
 
 export interface ForecastEntry {
-  timestamp: number; // Representa `list.dt`
+  timestamp: number; 
   time: string;
   mainData: MainData;
   weather: WeatherData;
   wind: WindData;
-  visibility: number; // `list.visibility`
-  pop: number; // `list.pop`
+  visibility: number;
+  pop: number; 
 }
 
 export type ThemeMode = "light" | "dark";
